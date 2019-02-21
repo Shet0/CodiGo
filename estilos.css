@@ -1,0 +1,9 @@
+tr:nth-child(even){
+  background-color: aquamarine;
+}
+td:nth-child(2){
+  background-color: white;
+}
+ tr #submit td:nth-child(1){
+  background-color: white;
+}

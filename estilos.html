@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Probando github</title>
+  <link rel="stylesheet" href="./estilos.css">
+</head>
+<body>
+    <h1>Formulario de Viaje</h1>
+    <hr>
+    <form action="./prosesar.html" method="GET">
+    <table>
+      <tr>
+        <p>
+          <td>
+            <label for="idNombre">Nombre:</label>
+          </td>
+          <td>
+            <input type="text" id="idNombre" name="nombre" minlength="10" maxlength="50" required>
+          </td>
+        </p>
+      </tr>
+      <tr>
+          <p>
+            <td>
+              <label for="idApellido">Apellidos:</label>
+            </td>
+            <td>
+              <input type="text" id="idApellido" name="apellido" minlength="10" maxlength="50" required>
+            </td>
+          </p>
+      </tr>
+      <tr>
+        <p>
+          <td>
+            <label for="idemail">Email:</label>
+          </td>
+          <td>
+            <input type="email" id="idemail" name="Email" required>
+          </td>
+        </p>
+      </tr>
+      <tr>
+          <p>
+            <td>
+              <label for="idEdad">Edad:</label>
+            </td>
+            <td>
+              <input type="number" id="idEdad" name="edad" min="18">
+            </td>
+          </p>
+  </tr>
+  <tr>
+      <p>
+        <td>
+          <label for="idCiudad">Ciudad Destino:</label>
+        </td>
+        <td>
+          <select name="ciudad" id="idCiudad">
+            <option value="0">Seleccione...</option>
+            <option value="054">Arequipa</option>
+            <option value="01">Lima</option>
+          </select>
+        </td>
+      </p>
+    </tr>
+    <tr>
+      <p>
+        <td>
+          <label for="idhabitacion">Tipo de Habitacion:</label>
+        </td>
+        <td>
+          <select name="habitacion" id="idhabitacion">
+            <option value="0">Seleccione...</option>
+            <option value="simple">Simple</option>
+            <option value="doble">Doble</option>
+            <option value="triple">Triple</option>
+            <option value="matrimonial">Matrimonial</option>
+          </select>
+        </td>
+        <tr>
+          <p>
+            <td><label for="idfechaL">Fecha de Llegada:</label></td>
+            <td><input type="date" name="fecha_llegada" id="idfechaL"></td>
+          </p>
+        </tr><tr>
+            <p>
+              <td><label for="idfechaS">Fecha de Salida:</label></td>
+              <td><input type="date" name="fecha_salida" id="idfechaS"></td>
+            </p>
+          </tr>
+          </p>
+      </tr>
+      <tr>
+        <p>
+          <td>
+            <label for="idComentario">Comentarios</label>
+          </td>
+        <td>
+          <textarea name="mensaje" id="idComentario" cols="30" rows="10" placeholder="Ingrese su comentario..."></textarea>
+        </td>
+      </p>
+    </tr>
+    <tr>
+        <p>
+          <td  class="submit" colspan="3" style="text-align:center">
+            <input type="submit" value="Enviar">
+          </td>
+        </p>
+      </tr>
+  </table>
+  </form>
+    
+  </body>
+</html>
